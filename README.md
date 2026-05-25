@@ -116,6 +116,8 @@ systemctl start ssh
 ssh digitalwatchman@192.168.1.222
 ```
 
+![SSH Connection Verified](./screenshots/SSH-Connection-Verified.png)
+
 > All further commands run on the server machine are via an SSH connection.
 
 ### SSH Key-Based Authentication
@@ -136,8 +138,6 @@ type $env:USERPROFILE\.ssh\id_ed25519.pub | ssh digitalwatchman@192.168.1.222 "m
 # Disconnect and reconnect to verify the SSH key pair is in use
 ssh digitalwatchman@192.168.1.222
 ```
-
-![SSH Connection Verified](./screenshots/SSH-Connection-Verified.png)
 
 Since I have configured my SSH key pair with a passphrase, I will be disabling password authentication on the server machine. I will also disable root login and enable public key authentication. These changes are made in `/etc/ssh/sshd_config`:
 
@@ -195,6 +195,8 @@ UPLOAD_LOCATION=/mnt/raid
 DB_DATA_LOCATION=./postgres
 DB_PASSWORD=<your_password>
 ```
+
+![Immich-env-Edited](./screenshots/Immich-env-Edited.png)
 
 ```bash
 # Start the Immich containers
