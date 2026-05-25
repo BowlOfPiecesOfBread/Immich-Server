@@ -93,6 +93,8 @@ sudo ufw enable
 sudo ufw status
 ```
 
+![Firewall configured](./screenshots/Firewall-Configured.png)
+
 ---
 
 ## Headless Configuration
