@@ -151,6 +151,8 @@ PasswordAuthentication no
 PubkeyAuthentication yes
 ```
 
+
+
 ---
 
 ## Docker and Immich Installation
@@ -196,7 +198,7 @@ DB_DATA_LOCATION=./postgres
 DB_PASSWORD=<your_password>
 ```
 
-
+![Immich-env-Edited](./screenshots/Immich-env-Edited.png)
 
 ```bash
 # Start the Immich containers
