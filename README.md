@@ -386,7 +386,7 @@ The last thing to do is set up the Immich mobile app.
 - Log in with user account credentials
 - Upload a photo to verify app and server functionality
 
-
+<img src="./screenshots/Immich-App-on-Phone.jpg" width="300">
 
 ---
 
