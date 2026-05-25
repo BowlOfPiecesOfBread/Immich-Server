@@ -151,7 +151,7 @@ PasswordAuthentication no
 PubkeyAuthentication yes
 ```
 
-
+![sshd_config-Edited](./screenshots/sshd_config-Edited.png)
 
 ---
 
@@ -206,6 +206,8 @@ docker compose up -d
 ```
 
 To verify Immich is up and running, I navigate to `http://192.168.1.222:2283` in a browser. I'm met with a **Get Started** page where I configure my administrator account.
+
+![Immich-Working-In-Browser](./screenshots/Immich-Working-In-Browser.png)
 
 ---
 
@@ -321,6 +323,8 @@ On the Grafana webpage, I am prompted with a login. Grafana's default credential
 2. Enter dashboard ID `1860`
 3. Rename to `Immich Server Machine` and click **Import**
 
+![Grafana-and-Prometheus](./screenshots/Grafana-and-Prometheus.png)
+
 ---
 
 ## Cloudflare Tunnel
@@ -381,6 +385,8 @@ The last thing to do is set up the Immich mobile app.
 - Input the domain URL
 - Log in with user account credentials
 - Upload a photo to verify app and server functionality
+
+
 
 ---
 
