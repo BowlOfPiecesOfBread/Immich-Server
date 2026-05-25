@@ -196,7 +196,7 @@ DB_DATA_LOCATION=./postgres
 DB_PASSWORD=<your_password>
 ```
 
---------------------
+
 
 ```bash
 # Start the Immich containers
