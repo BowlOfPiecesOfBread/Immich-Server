@@ -93,7 +93,7 @@ sudo ufw enable
 sudo ufw status
 ```
 
-![Firewall configured](./screenshots/Firewall-Configured.png)
+![Firewall configured](./screenshots/Firewall_Configured.png)
 
 ---
 
@@ -116,7 +116,7 @@ systemctl start ssh
 ssh digitalwatchman@192.168.1.222
 ```
 
-![SSH Connection Verified](./screenshots/SSH-Connection-Verified.png)
+![SSH connection verified](./screenshots/SSH_Connection_Verified.png)
 
 > All further commands run on the server machine are via an SSH connection.
 
@@ -151,7 +151,7 @@ PasswordAuthentication no
 PubkeyAuthentication yes
 ```
 
-![sshd_config-Edited](./screenshots/sshd_config-Edited.png)
+![sshd_config edited](./screenshots/ssshd_config_Edited.png)
 
 ---
 
@@ -198,7 +198,7 @@ DB_DATA_LOCATION=./postgres
 DB_PASSWORD=<your_password>
 ```
 
-![Immich-env-Edited](./screenshots/Immich-env-Edited.png)
+![Immich .env edited](./screenshots/Immich__env_Edited.png)
 
 ```bash
 # Start the Immich containers
@@ -207,7 +207,7 @@ docker compose up -d
 
 To verify Immich is up and running, I navigate to `http://192.168.1.222:2283` in a browser. I'm met with a **Get Started** page where I configure my administrator account.
 
-![Immich-Working-In-Browser](./screenshots/Immich-Working-In-Browser.png)
+![Immich working in browser](./screenshots/Screenshot_2026-05-22_024616.png)
 
 ---
 
@@ -323,7 +323,7 @@ On the Grafana webpage, I am prompted with a login. Grafana's default credential
 2. Enter dashboard ID `1860`
 3. Rename to `Immich Server Machine` and click **Import**
 
-![Grafana-and-Prometheus](./screenshots/Grafana-and-Prometheus.png)
+![Grafana and Prometheus configured](./screenshots/Grafana_and_Prometheus_Configured.png)
 
 ---
 
@@ -386,13 +386,22 @@ The last thing to do is set up the Immich mobile app.
 - Log in with user account credentials
 - Upload a photo to verify app and server functionality
 
-<img src="./screenshots/Immich-App-on-Phone.jpg" width="300">
+![Immich app on phone](./screenshots/Immich_App_on_Phone.jpg)
 
 ---
 
 ## Conclusion
 
-For now, I have verified full functionality on my fiancée's device. We can call this project a success.
+To recap this entire project, I have:
+
+- Installed and configured Ubuntu Server on a Dell OptiPlex 3020
+- Created a software RAID 1 array for data redundancy
+- Configured an SSH connection to allow the server to be managed headless
+- Used Grafana + Prometheus to create a monitoring dashboard
+- Granted remote access to the Immich app using a Cloudflare Tunnel
+- Installed and verified full functionality of the Immich app on my fiancée's phone
+
+What is not captured in this documentation is the days and nights spent brainstorming ideas, doing the research, and applying what I've learned in the process. The end result is a self-hosted media storage server that my fiancée can now access remotely from anywhere in the world as she continues to pursue her art. In my book, this project has been a major success.
 
 ### Potential Future Upgrades
 
