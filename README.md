@@ -1,4 +1,4 @@
-# Home Media Server — Immich on Dell OptiPlex 3020
+# Building a Self-Hosted Immich Server
 
 ## Background
 
@@ -93,7 +93,7 @@ sudo ufw enable
 sudo ufw status
 ```
 
-![Firewall configured](./screenshots/Firewall_Configured.png)
+![Firewall configured](./screenshots/Firewall-Configured.png)
 
 ---
 
@@ -116,7 +116,7 @@ systemctl start ssh
 ssh digitalwatchman@192.168.1.222
 ```
 
-![SSH connection verified](./screenshots/SSH_Connection_Verified.png)
+![SSH connection verified](./screenshots/SSH-Connection-Verified.png)
 
 > All further commands run on the server machine are via an SSH connection.
 
@@ -151,7 +151,7 @@ PasswordAuthentication no
 PubkeyAuthentication yes
 ```
 
-![sshd_config edited](./screenshots/ssshd_config_Edited.png)
+![sshd_config edited](./screenshots/sshd-config-Edited.png)
 
 ---
 
@@ -198,7 +198,7 @@ DB_DATA_LOCATION=./postgres
 DB_PASSWORD=<your_password>
 ```
 
-![Immich .env edited](./screenshots/Immich__env_Edited.png)
+![Immich .env edited](./screenshots/Immich-env-Edited.png)
 
 ```bash
 # Start the Immich containers
@@ -207,7 +207,7 @@ docker compose up -d
 
 To verify Immich is up and running, I navigate to `http://192.168.1.222:2283` in a browser. I'm met with a **Get Started** page where I configure my administrator account.
 
-![Immich working in browser](./screenshots/Screenshot_2026-05-22_024616.png)
+![Immich working in browser](./screenshots/Immich-Working-In-Browser.png)
 
 ---
 
@@ -323,7 +323,7 @@ On the Grafana webpage, I am prompted with a login. Grafana's default credential
 2. Enter dashboard ID `1860`
 3. Rename to `Immich Server Machine` and click **Import**
 
-![Grafana and Prometheus configured](./screenshots/Grafana_and_Prometheus_Configured.png)
+![Grafana and Prometheus configured](./screenshots/Grafana-and-Prometheus.png)
 
 ---
 
@@ -386,7 +386,7 @@ The last thing to do is set up the Immich mobile app.
 - Log in with user account credentials
 - Upload a photo to verify app and server functionality
 
-![Immich app on phone](./screenshots/Immich_App_on_Phone.jpg)
+![Immich app on phone](./screenshots/Immich-App-on-Phone.jpg)
 
 ---
 
