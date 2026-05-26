@@ -394,7 +394,7 @@ The last thing to do is set up the Immich mobile app.
 
 To recap this entire project, I have:
 
-- Installed and configured Ubuntu Server on a Dell OptiPlex 3020
+- Installed and configured Ubuntu Server on a repurposed Dell OptiPlex 3020
 - Created a software RAID 1 array for data redundancy
 - Configured an SSH connection to allow the server to be managed headless
 - Used Grafana + Prometheus to create a monitoring dashboard
