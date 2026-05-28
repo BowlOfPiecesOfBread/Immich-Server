@@ -151,7 +151,7 @@ PasswordAuthentication no
 PubkeyAuthentication yes
 ```
 
-![sshd_config edited](./screenshots/sshd-config-Edited.png)
+![sshd_config edited](./screenshots/sshd_config-Edited.png)
 
 ---
 
